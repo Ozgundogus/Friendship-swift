@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class CreateAccountViewController: UIViewController {
 
@@ -13,11 +14,14 @@ class CreateAccountViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+           let realm = try! Realm()
 
-        // Do any additional setup after loading the view.
+    
     }
     
     @IBAction func signUpButton(_ sender: Any) {
+        
+      
     }
     
     /*

@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  CreateAccountApprovedViewController.swift
 //  Friendship
 //
 //  Created by Ozgun Dogus on 2.04.2023.
@@ -7,17 +7,15 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class CreateAccountApprovedViewController: UIViewController {
 
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var usernameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func loginButton(_ sender: Any) {
+    @IBAction func logInButton(_ sender: Any) {
     }
     
     /*

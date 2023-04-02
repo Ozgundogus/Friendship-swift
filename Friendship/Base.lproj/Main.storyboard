@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfS-Xj-0WM">
-                                <rect key="frame" x="161" y="441" width="70" height="35"/>
+                                <rect key="frame" x="161" y="441" width="71" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Log in">
-                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Log In">
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="dvM-Or-DrX" kind="show" id="6OR-rZ-lkQ"/>
@@ -41,10 +41,10 @@
                                 <rect key="frame" x="72" y="169" width="272" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
                                 <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="shadowColor" systemColor="systemBackgroundColor"/>
-                                <size key="shadowOffset" width="-2" height="-1"/>
+                                <color key="shadowColor" systemColor="systemOrangeColor"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -89,6 +89,7 @@
                                 <buttonConfiguration key="configuration" style="gray" title="Sign Up"/>
                                 <connections>
                                     <action selector="signUpButton:" destination="aMw-fl-qFM" eventType="touchUpInside" id="bpq-iw-yNJ"/>
+                                    <segue destination="iup-ce-gYM" kind="show" id="uqu-rc-5iK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sing Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1v-DC-xQD">
@@ -121,14 +122,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRH-La-jmn">
-                                <rect key="frame" x="161" y="678" width="70" height="35"/>
+                                <rect key="frame" x="161" y="678" width="71" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Log in">
+                                <buttonConfiguration key="configuration" style="gray" title="Log In">
                                     <color key="baseForegroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="loginButton:" destination="dvM-Or-DrX" eventType="touchUpInside" id="tap-qx-5KB"/>
+                                    <action selector="loginButton:" destination="dvM-Or-DrX" eventType="touchUpInside" id="LRB-AX-So9"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ru1-KH-PeM">
@@ -149,7 +150,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoZ-wt-D1j">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoZ-wt-D1j">
                                 <rect key="frame" x="75" y="284" width="74" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
@@ -163,8 +164,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="c6Y-PD-F9P"/>
                     <connections>
-                        <outlet property="passwordTextField" destination="o4D-mx-y4m" id="eGy-OG-xk6"/>
-                        <outlet property="usernameTextField" destination="ru1-KH-PeM" id="CAC-qb-M1y"/>
+                        <outlet property="passwordTextField" destination="o4D-mx-y4m" id="NCo-Iw-SyP"/>
+                        <outlet property="usernameTextField" destination="ru1-KH-PeM" id="uDT-oM-2Q9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQI-zX-Alr" sceneMemberID="firstResponder"/>
@@ -189,11 +190,57 @@
             </objects>
             <point key="canvasLocation" x="-329.00763358778624" y="114.78873239436621"/>
         </scene>
+        <!--Create Account View Controller-->
+        <scene sceneID="aNI-Dv-NVY">
+            <objects>
+                <viewController id="iup-ce-gYM" customClass="CreateAccountViewController" customModule="Friendship" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SLR-t7-I4g">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kD-NE-2Jw">
+                                <rect key="frame" x="114" y="653" width="164" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Log In"/>
+                                <connections>
+                                    <action selector="logInButton:" destination="t3x-ZQ-sRQ" eventType="touchUpInside" id="73W-0M-fgF"/>
+                                    <action selector="signUpButton:" destination="iup-ce-gYM" eventType="touchUpInside" id="FOh-Yf-off"/>
+                                    <segue destination="dvM-Or-DrX" kind="show" id="wDm-UT-zER"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hesabınız Başarıyla Oluşturuldu " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZt-AX-gEF">
+                                <rect key="frame" x="17" y="380" width="360" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZUz-K2-yIa"/>
+                        <color key="backgroundColor" red="0.37156723479999998" green="0.37156723479999998" blue="0.37156723479999998" alpha="0.65842301319999996" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KbJ-7T-VVO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2nG-pn-p18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="t3x-ZQ-sRQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2336.6412213740459" y="461.97183098591552"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6OR-rZ-lkQ"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
