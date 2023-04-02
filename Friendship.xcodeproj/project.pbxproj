@@ -18,6 +18,7 @@
 		0CD4D89729D8C8BA009ADF5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4D89529D8C8BA009ADF5E /* LaunchScreen.storyboard */; };
 		0CD4D89F29D911FA009ADF5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4D89E29D911FA009ADF5E /* LoginViewController.swift */; };
 		0CD4D8A129D91466009ADF5E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4D8A029D91466009ADF5E /* CreateAccountViewController.swift */; };
+		54D554A41A9D5619EA828483 /* Pods_Friendship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFA2EF757C4B48DC668707E /* Pods_Friendship.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		0CD4D89829D8C8BA009ADF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CD4D89E29D911FA009ADF5E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0CD4D8A029D91466009ADF5E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		3BDDAB9D592C2F8DAB6C6D6C /* Pods-Friendship.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friendship.debug.xcconfig"; path = "Target Support Files/Pods-Friendship/Pods-Friendship.debug.xcconfig"; sourceTree = "<group>"; };
+		90796C12E32D355A3F99CB6C /* Pods-Friendship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friendship.release.xcconfig"; path = "Target Support Files/Pods-Friendship/Pods-Friendship.release.xcconfig"; sourceTree = "<group>"; };
+		CFFA2EF757C4B48DC668707E /* Pods_Friendship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Friendship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			files = (
 				0C10739329DA1307006C3B37 /* RealmSwift in Frameworks */,
 				0C10739129DA1307006C3B37 /* Realm in Frameworks */,
+				54D554A41A9D5619EA828483 /* Pods_Friendship.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				0CD4D88929D8C8BA009ADF5E /* Friendship */,
 				0CD4D88829D8C8BA009ADF5E /* Products */,
+				8B3569236DB7091722425CFD /* Pods */,
+				E9724E6C2BF30D24EFEAE7CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +87,24 @@
 			path = Friendship;
 			sourceTree = "<group>";
 		};
+		8B3569236DB7091722425CFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BDDAB9D592C2F8DAB6C6D6C /* Pods-Friendship.debug.xcconfig */,
+				90796C12E32D355A3F99CB6C /* Pods-Friendship.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E9724E6C2BF30D24EFEAE7CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFFA2EF757C4B48DC668707E /* Pods_Friendship.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CD4D89B29D8C8BA009ADF5E /* Build configuration list for PBXNativeTarget "Friendship" */;
 			buildPhases = (
+				5FB867514AA5E58D039C28CB /* [CP] Check Pods Manifest.lock */,
 				0CD4D88329D8C8BA009ADF5E /* Sources */,
 				0CD4D88429D8C8BA009ADF5E /* Frameworks */,
 				0CD4D88529D8C8BA009ADF5E /* Resources */,
@@ -129,7 +155,7 @@
 			);
 			mainGroup = 0CD4D87E29D8C8BA009ADF5E;
 			packageReferences = (
-				0C10738F29DA1307006C3B37 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				0C10738F29DA1307006C3B37 /* XCRemoteSwiftPackageReference "realm-swift.git" */,
 			);
 			productRefGroup = 0CD4D88829D8C8BA009ADF5E /* Products */;
 			projectDirPath = "";
@@ -152,6 +178,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FB867514AA5E58D039C28CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Friendship-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0CD4D88329D8C8BA009ADF5E /* Sources */ = {
@@ -305,6 +356,7 @@
 		};
 		0CD4D89C29D8C8BA009ADF5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BDDAB9D592C2F8DAB6C6D6C /* Pods-Friendship.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -332,6 +384,7 @@
 		};
 		0CD4D89D29D8C8BA009ADF5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90796C12E32D355A3F99CB6C /* Pods-Friendship.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,7 +434,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0C10738F29DA1307006C3B37 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		0C10738F29DA1307006C3B37 /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -394,12 +447,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		0C10739029DA1307006C3B37 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0C10738F29DA1307006C3B37 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 0C10738F29DA1307006C3B37 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = Realm;
 		};
 		0C10739229DA1307006C3B37 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0C10738F29DA1307006C3B37 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 0C10738F29DA1307006C3B37 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
