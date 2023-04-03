@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -130,6 +131,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="loginButton:" destination="dvM-Or-DrX" eventType="touchUpInside" id="LRB-AX-So9"/>
+                                    <segue destination="vrO-uw-ZE2" kind="show" identifier="homePage" id="kcP-zR-G71"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ru1-KH-PeM">
@@ -226,6 +228,50 @@
                 <exit id="t3x-ZQ-sRQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2336.6412213740459" y="461.97183098591552"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LmK-m2-93a">
+            <objects>
+                <viewController id="vrO-uw-ZE2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Fh-73-O3D">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fcf-4t-jh6">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RyU-8U-tbb">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bTd-eJ-rus">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="N24-4I-v2O">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tgD-4c-hWG"/>
+                        <color key="backgroundColor" red="0.37156723479999998" green="0.37156723479999998" blue="0.37156723479999998" alpha="0.65842301319999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tgD-4c-hWG" firstAttribute="trailing" secondItem="fcf-4t-jh6" secondAttribute="trailing" id="Q80-Hr-kBb"/>
+                            <constraint firstItem="fcf-4t-jh6" firstAttribute="top" secondItem="tgD-4c-hWG" secondAttribute="top" id="Z6O-5d-v7N"/>
+                            <constraint firstItem="fcf-4t-jh6" firstAttribute="leading" secondItem="tgD-4c-hWG" secondAttribute="leading" id="dW9-JU-hyd"/>
+                            <constraint firstItem="tgD-4c-hWG" firstAttribute="bottom" secondItem="fcf-4t-jh6" secondAttribute="bottom" id="x10-Vm-A59"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YXg-re-psq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kzj-Hh-85w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2622" y="-244"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
