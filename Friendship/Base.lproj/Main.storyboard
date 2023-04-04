@@ -42,14 +42,14 @@
                                 <rect key="frame" x="72" y="169" width="272" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
+                                <color key="textColor" red="0.32781176916276566" green="0.10724011062402032" blue="0.085726125362122471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="shadowColor" systemColor="systemOrangeColor"/>
+                                <color key="shadowColor" red="0.42308715159924465" green="0.43667501927266367" blue="0.44927794554016809" alpha="0.30732615894039733" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.37156723479999998" green="0.37156723479999998" blue="0.37156723479999998" alpha="0.65842301319999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.191591207866535" green="0.21338596479524344" blue="0.28896385732323238" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jdl-1k-457"/>
                 </viewController>
@@ -102,7 +102,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="unK-wQ-qwa"/>
-                        <color key="backgroundColor" red="0.37156723479999998" green="0.37156723479999998" blue="0.37156723479999998" alpha="0.65842301319999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1915912079" green="0.21338596479999999" blue="0.28896385730000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jrx-g4-8ay"/>
                     <connections>
@@ -161,7 +161,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mxx-KJ-yY7"/>
-                        <color key="backgroundColor" red="0.37156723479999998" green="0.37156723479999998" blue="0.37156723479999998" alpha="0.65842301319999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1915912079" green="0.21338596479999999" blue="0.28896385730000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="c6Y-PD-F9P"/>
@@ -220,7 +220,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZUz-K2-yIa"/>
-                        <color key="backgroundColor" red="0.37156723479999998" green="0.37156723479999998" blue="0.37156723479999998" alpha="0.65842301319999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1915912079" green="0.21338596479999999" blue="0.28896385730000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="KbJ-7T-VVO"/>
                 </viewController>
@@ -259,7 +259,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tgD-4c-hWG"/>
-                        <color key="backgroundColor" red="0.37156723479999998" green="0.37156723479999998" blue="0.37156723479999998" alpha="0.65842301319999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1915912079" green="0.21338596479999999" blue="0.28896385730000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="tgD-4c-hWG" firstAttribute="trailing" secondItem="fcf-4t-jh6" secondAttribute="trailing" id="Q80-Hr-kBb"/>
                             <constraint firstItem="fcf-4t-jh6" firstAttribute="top" secondItem="tgD-4c-hWG" secondAttribute="top" id="Z6O-5d-v7N"/>
@@ -281,9 +281,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
