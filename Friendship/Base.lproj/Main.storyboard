@@ -235,7 +235,7 @@
                 <viewController id="vrO-uw-ZE2" customClass="HomeViewController" customModule="Friendship" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="cqp-EE-6XT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.1925758296" green="0.21767303269999999" blue="0.3019607097" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6d0-pe-drP">
                             <size key="itemSize" width="250" height="250"/>
@@ -246,30 +246,52 @@
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="f80-7n-Xif" customClass="HomeCollectionViewCell" customModule="Friendship" customModuleProvider="target">
                                 <rect key="frame" x="71.666666666666671" y="0.0" width="250" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UN2-bu-hka">
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İsim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDA-uQ-Fww">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İsim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDA-uQ-Fww">
                                             <rect key="frame" x="42" y="214" width="41" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pVs-Tn-aKo">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pVs-Tn-aKo">
                                             <rect key="frame" x="0.0" y="0.0" width="250" height="206"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yaş" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-hP-exn">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yaş" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-hP-exn">
                                             <rect key="frame" x="164" y="214" width="33" height="26"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VDA-uQ-Fww" firstAttribute="top" secondItem="pVs-Tn-aKo" secondAttribute="bottom" constant="8" symbolic="YES" id="1N7-rx-YF1"/>
+                                        <constraint firstItem="VDA-uQ-Fww" firstAttribute="top" secondItem="pVs-Tn-aKo" secondAttribute="bottom" constant="8" symbolic="YES" id="7ZH-fh-nFH"/>
+                                        <constraint firstItem="kfS-hP-exn" firstAttribute="leading" secondItem="VDA-uQ-Fww" secondAttribute="trailing" constant="81" id="85E-Aq-yJi"/>
+                                        <constraint firstItem="pVs-Tn-aKo" firstAttribute="leading" secondItem="UN2-bu-hka" secondAttribute="leading" id="AC5-de-nGz"/>
+                                        <constraint firstItem="pVs-Tn-aKo" firstAttribute="centerX" secondItem="UN2-bu-hka" secondAttribute="centerX" id="BY8-Si-0b2"/>
+                                        <constraint firstItem="kfS-hP-exn" firstAttribute="leading" secondItem="VDA-uQ-Fww" secondAttribute="trailing" constant="81" id="DOC-ap-hYR"/>
+                                        <constraint firstItem="pVs-Tn-aKo" firstAttribute="leading" secondItem="UN2-bu-hka" secondAttribute="leading" id="IUE-Vp-ZGh"/>
+                                        <constraint firstItem="pVs-Tn-aKo" firstAttribute="top" secondItem="UN2-bu-hka" secondAttribute="top" id="J5F-p8-P3k"/>
+                                        <constraint firstAttribute="bottom" secondItem="VDA-uQ-Fww" secondAttribute="bottom" constant="8" id="L9X-HG-vdg"/>
+                                        <constraint firstItem="VDA-uQ-Fww" firstAttribute="bottom" secondItem="UN2-bu-hka" secondAttribute="bottomMargin" id="OZP-As-KKv"/>
+                                        <constraint firstItem="kfS-hP-exn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VDA-uQ-Fww" secondAttribute="trailing" constant="8" symbolic="YES" id="R6h-u0-YcX"/>
+                                        <constraint firstItem="VDA-uQ-Fww" firstAttribute="leading" secondItem="UN2-bu-hka" secondAttribute="leading" constant="42" id="Tc7-v0-SMI"/>
+                                        <constraint firstItem="VDA-uQ-Fww" firstAttribute="top" secondItem="pVs-Tn-aKo" secondAttribute="bottom" constant="8" symbolic="YES" id="USH-HF-gI5"/>
+                                        <constraint firstItem="pVs-Tn-aKo" firstAttribute="top" secondItem="UN2-bu-hka" secondAttribute="top" id="Uk7-Fq-vzr"/>
+                                        <constraint firstItem="pVs-Tn-aKo" firstAttribute="leading" secondItem="UN2-bu-hka" secondAttribute="leading" id="VyM-H2-XT1"/>
+                                        <constraint firstItem="VDA-uQ-Fww" firstAttribute="top" secondItem="kfS-hP-exn" secondAttribute="top" id="bZb-pe-dgo"/>
+                                        <constraint firstAttribute="trailing" secondItem="pVs-Tn-aKo" secondAttribute="trailing" id="c9u-iL-0Fo"/>
+                                        <constraint firstItem="VDA-uQ-Fww" firstAttribute="leading" secondItem="UN2-bu-hka" secondAttribute="leading" constant="42" id="fGz-KF-pxN"/>
+                                        <constraint firstAttribute="trailing" secondItem="pVs-Tn-aKo" secondAttribute="trailing" id="nS8-D8-fZj"/>
+                                        <constraint firstItem="pVs-Tn-aKo" firstAttribute="top" secondItem="UN2-bu-hka" secondAttribute="top" id="vrC-Th-uii"/>
+                                        <constraint firstAttribute="bottom" secondItem="kfS-hP-exn" secondAttribute="bottom" constant="10" id="x6p-Yc-60U"/>
+                                        <constraint firstAttribute="trailing" secondItem="kfS-hP-exn" secondAttribute="trailing" constant="53" id="yVJ-ha-ZWK"/>
+                                        <constraint firstItem="kfS-hP-exn" firstAttribute="top" secondItem="pVs-Tn-aKo" secondAttribute="bottom" constant="8" symbolic="YES" id="yqj-Th-fHX"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" red="0.14629095689999999" green="0.17358539249999999" blue="0.23665925769999999" alpha="0.41926221029999999" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="customSize" width="250" height="250"/>
