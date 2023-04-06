@@ -274,12 +274,17 @@
                                 <color key="backgroundColor" red="0.14629095689999999" green="0.17358539249999999" blue="0.23665925769999999" alpha="0.41926221029999999" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="customSize" width="250" height="250"/>
                                 <connections>
+                                    <outlet property="backgroundView" destination="UN2-bu-hka" id="ym2-fd-ZTd"/>
                                     <outlet property="personAge" destination="kfS-hP-exn" id="Rlw-pG-gGU"/>
                                     <outlet property="personImage" destination="pVs-Tn-aKo" id="5V9-bu-njE"/>
                                     <outlet property="personName" destination="VDA-uQ-Fww" id="lEs-KU-0Sg"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="vrO-uw-ZE2" id="GHN-f9-CDl"/>
+                            <outlet property="delegate" destination="vrO-uw-ZE2" id="wte-n9-FG3"/>
+                        </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="YXg-re-psq"/>
                     <connections>

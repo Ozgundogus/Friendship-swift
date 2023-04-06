@@ -15,10 +15,10 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
             super.awakeFromNib()
-            
+        self.contentView.backgroundColor = .white
             self.contentView.layer.cornerRadius = 10
             self.contentView.layer.masksToBounds = true
-
+            
             self.personImage.contentMode = .scaleAspectFill
             self.personImage.clipsToBounds = true
         }
