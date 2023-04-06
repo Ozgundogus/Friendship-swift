@@ -14,7 +14,7 @@ class CreateAccountViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-           let realm = try! Realm()
+//           let realm = try! Realm()
 
     
     }

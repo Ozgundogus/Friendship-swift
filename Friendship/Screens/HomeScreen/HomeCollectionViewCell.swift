@@ -11,6 +11,15 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var personName: UILabel!
     @IBOutlet weak var personAge: UILabel!
-    @IBOutlet weak var personLocation: UILabel!
     @IBOutlet weak var personImage: UIImageView!
+    
+    override func awakeFromNib() {
+            super.awakeFromNib()
+            
+            self.contentView.layer.cornerRadius = 10
+            self.contentView.layer.masksToBounds = true
+
+            self.personImage.contentMode = .scaleAspectFill
+            self.personImage.clipsToBounds = true
+        }
 }
