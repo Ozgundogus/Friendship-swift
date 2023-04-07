@@ -274,7 +274,7 @@
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wv8-0L-P4c">
-                                            <rect key="frame" x="185" y="216" width="30" height="30"/>
+                                            <rect key="frame" x="185" y="222" width="20" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
@@ -346,11 +346,11 @@
             <objects>
                 <viewController id="Knq-zr-7Rj" customClass="MapScreen" customModule="Friendship" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LN1-ZU-nUP">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbi-va-rEg">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" red="0.19150213369999999" green="0.21586793500000001" blue="0.3019607097" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
@@ -369,7 +369,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UCL-Sb-KUf"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="tbi-va-rEg" id="qvh-iN-iMK"/>
                     </connections>
