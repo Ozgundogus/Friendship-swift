@@ -259,6 +259,7 @@
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pVs-Tn-aKo">
                                             <rect key="frame" x="0.0" y="0.0" width="250" height="206"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yaş" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-hP-exn">
                                             <rect key="frame" x="164" y="214" width="33" height="26"/>

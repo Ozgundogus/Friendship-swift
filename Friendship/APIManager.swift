@@ -11,7 +11,7 @@ class ApiManager {
     static let shared = ApiManager() // Singleton instance
 
     func fetchData(completion: @escaping (Result<[User], Error>) -> Void) {
-        guard let url = URL(string: "https://randomuser.me/api/?results=20") else {
+        guard let url = URL(string: "https://randomuser.me/api/?results=20&inc=name,dob,picture") else {
             completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
             return
         }
@@ -29,10 +29,20 @@ class ApiManager {
             
             do {
                 let decoder = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                
+                decoder.keyDecodingStrategy = .useDefaultKeys
+
                 let response = try decoder.decode(APIResponse.self, from: data)
-                completion(.success(response.results))
+                let users = response.results.compactMap { result -> User? in
+                    if let data = try? JSONEncoder().encode(result) {
+                        let decoder = JSONDecoder()
+                        if let user = try? decoder.decode(User.self, from: data) {
+                            return user
+                        }
+                    }
+                    return nil
+                }
+
+                completion(.success(users))
             } catch {
                 completion(.failure(error))
             }
