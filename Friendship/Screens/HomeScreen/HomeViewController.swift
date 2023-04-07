@@ -101,7 +101,7 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         let user = users[indexPath.row]
         
         cell.personName.text = "\(user.name?.first ?? "")  \(user.name?.last ?? "")"
-        cell.personAge.text = "\(user.dob?.age)"
+        cell.personAge.text = "\(String(describing: user.dob?.age))"
         
         // Resim indirme işlemleri
         if let url = URL(string: user.picture?.large ?? "") {
