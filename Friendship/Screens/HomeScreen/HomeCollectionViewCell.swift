@@ -13,6 +13,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var personAge: UILabel!
     @IBOutlet weak var personImage: UIImageView!
     
+    @IBOutlet weak var locationButton: UIButton!
     
        func configure(with user: User) {
            

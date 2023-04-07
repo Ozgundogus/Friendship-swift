@@ -10,6 +10,7 @@
 		0C10738E29DA03E7006C3B37 /* CreateAccountApprovedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10738D29DA03E7006C3B37 /* CreateAccountApprovedViewController.swift */; };
 		0C10739129DA1307006C3B37 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0C10739029DA1307006C3B37 /* Realm */; };
 		0C10739329DA1307006C3B37 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0C10739229DA1307006C3B37 /* RealmSwift */; };
+		0C8490B729E0B38F001402A1 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8490B629E0B38F001402A1 /* MapScreen.swift */; };
 		0C95225229DB7E6D0090CCBD /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C95225129DB7E6D0090CCBD /* UserInfo.swift */; };
 		0CD4D88B29D8C8BA009ADF5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4D88A29D8C8BA009ADF5E /* AppDelegate.swift */; };
 		0CD4D88D29D8C8BA009ADF5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4D88C29D8C8BA009ADF5E /* SceneDelegate.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		0C10738D29DA03E7006C3B37 /* CreateAccountApprovedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountApprovedViewController.swift; sourceTree = "<group>"; };
+		0C8490B629E0B38F001402A1 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		0C95225129DB7E6D0090CCBD /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		0CD4D88729D8C8BA009ADF5E /* Friendship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friendship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD4D88A29D8C8BA009ADF5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0C8490B329E0A72A001402A1 /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0C8490B629E0B38F001402A1 /* MapScreen.swift */,
+			);
+			path = MapScreen;
 			sourceTree = "<group>";
 		};
 		0C95224F29DB7DA30090CCBD /* Helpers */ = {
@@ -133,6 +143,7 @@
 		0CDFAC5229DD6273001DDE9F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0C8490B329E0A72A001402A1 /* MapScreen */,
 				0CDFAC5729DD6312001DDE9F /* Splash  */,
 				0CDFAC5629DD62D6001DDE9F /* HomeScreen */,
 				0CDFAC5429DD62BA001DDE9F /* Login */,
@@ -253,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8490B729E0B38F001402A1 /* MapScreen.swift in Sources */,
 				0CDFAC4E29DD6240001DDE9F /* APIManager.swift in Sources */,
 				0CDFAC5029DD6252001DDE9F /* PeopleModel.swift in Sources */,
 				0CD4D8A129D91466009ADF5E /* CreateAccountViewController.swift in Sources */,

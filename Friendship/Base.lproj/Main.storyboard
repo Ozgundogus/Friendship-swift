@@ -3,6 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -260,6 +262,7 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pVs-Tn-aKo">
                                             <rect key="frame" x="0.0" y="0.0" width="250" height="215"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <gestureRecognizers/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Yaş" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-hP-exn">
                                             <rect key="frame" x="153" y="223" width="33" height="17"/>
@@ -270,6 +273,20 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wv8-0L-P4c">
+                                            <rect key="frame" x="185" y="216" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                                <backgroundConfiguration key="background" cornerRadius="30">
+                                                    <color key="backgroundColor" red="0.69547275399999997" green="0.22751646549999999" blue="0.18187322759999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </backgroundConfiguration>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <segue destination="Knq-zr-7Rj" kind="show" id="w6y-mi-m9r"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="VDA-uQ-Fww" firstAttribute="top" secondItem="pVs-Tn-aKo" secondAttribute="bottom" constant="8" symbolic="YES" id="1N7-rx-YF1"/>
@@ -303,6 +320,7 @@
                                 <size key="customSize" width="250" height="250"/>
                                 <connections>
                                     <outlet property="backgroundView" destination="UN2-bu-hka" id="ym2-fd-ZTd"/>
+                                    <outlet property="locationButton" destination="wv8-0L-P4c" id="I2B-aA-4a7"/>
                                     <outlet property="personAge" destination="kfS-hP-exn" id="Rlw-pG-gGU"/>
                                     <outlet property="personImage" destination="pVs-Tn-aKo" id="5V9-bu-njE"/>
                                     <outlet property="personName" destination="VDA-uQ-Fww" id="lEs-KU-0Sg"/>
@@ -323,12 +341,52 @@
             </objects>
             <point key="canvasLocation" x="2620.6106870229005" y="-244.36619718309859"/>
         </scene>
+        <!--Map Screen-->
+        <scene sceneID="e9E-JD-hO8">
+            <objects>
+                <viewController id="Knq-zr-7Rj" customClass="MapScreen" customModule="Friendship" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LN1-ZU-nUP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbi-va-rEg">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.19150213369999999" green="0.21586793500000001" blue="0.3019607097" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Knq-zr-7Rj" id="v7U-2m-0Z2"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BUT-I4-OgZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BUT-I4-OgZ" firstAttribute="bottom" secondItem="tbi-va-rEg" secondAttribute="bottom" id="Ykr-EO-WIm"/>
+                            <constraint firstItem="BUT-I4-OgZ" firstAttribute="trailing" secondItem="tbi-va-rEg" secondAttribute="trailing" id="dgL-kH-7wk"/>
+                            <constraint firstItem="tbi-va-rEg" firstAttribute="leading" secondItem="BUT-I4-OgZ" secondAttribute="leading" id="sQq-en-70s"/>
+                            <constraint firstItem="tbi-va-rEg" firstAttribute="top" secondItem="BUT-I4-OgZ" secondAttribute="top" id="wxE-Ac-GJi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UCL-Sb-KUf"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="tbi-va-rEg" id="qvh-iN-iMK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vly-3S-vBK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3549" y="-253"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="wDm-UT-zER"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
