@@ -251,9 +251,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İsim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDA-uQ-Fww">
-                                            <rect key="frame" x="42" y="223" width="41" height="19"/>
-                                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="İsim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDA-uQ-Fww">
+                                            <rect key="frame" x="55" y="223" width="41" height="19"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </label>
@@ -261,10 +261,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="250" height="215"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yaş" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-hP-exn">
-                                            <rect key="frame" x="164" y="223" width="33" height="17"/>
-                                            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Yaş" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-hP-exn">
+                                            <rect key="frame" x="153" y="223" width="33" height="17"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="33" id="ctS-q7-Had"/>
                                             </constraints>
@@ -274,11 +273,13 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="VDA-uQ-Fww" firstAttribute="top" secondItem="pVs-Tn-aKo" secondAttribute="bottom" constant="8" symbolic="YES" id="1N7-rx-YF1"/>
+                                        <constraint firstItem="VDA-uQ-Fww" firstAttribute="leading" secondItem="UN2-bu-hka" secondAttribute="leading" constant="70" id="21f-D6-1jd"/>
                                         <constraint firstItem="VDA-uQ-Fww" firstAttribute="top" secondItem="pVs-Tn-aKo" secondAttribute="bottom" constant="8" symbolic="YES" id="7ZH-fh-nFH"/>
                                         <constraint firstItem="kfS-hP-exn" firstAttribute="leading" secondItem="VDA-uQ-Fww" secondAttribute="trailing" constant="81" id="85E-Aq-yJi"/>
                                         <constraint firstItem="pVs-Tn-aKo" firstAttribute="leading" secondItem="UN2-bu-hka" secondAttribute="leading" id="AC5-de-nGz"/>
                                         <constraint firstItem="pVs-Tn-aKo" firstAttribute="centerX" secondItem="UN2-bu-hka" secondAttribute="centerX" id="BY8-Si-0b2"/>
                                         <constraint firstItem="kfS-hP-exn" firstAttribute="leading" secondItem="VDA-uQ-Fww" secondAttribute="trailing" constant="81" id="DOC-ap-hYR"/>
+                                        <constraint firstAttribute="trailing" secondItem="kfS-hP-exn" secondAttribute="trailing" constant="70" id="Hiv-eq-0Cy"/>
                                         <constraint firstItem="pVs-Tn-aKo" firstAttribute="leading" secondItem="UN2-bu-hka" secondAttribute="leading" id="IUE-Vp-ZGh"/>
                                         <constraint firstItem="pVs-Tn-aKo" firstAttribute="top" secondItem="UN2-bu-hka" secondAttribute="top" id="J5F-p8-P3k"/>
                                         <constraint firstAttribute="bottom" secondItem="VDA-uQ-Fww" secondAttribute="bottom" constant="8" id="L9X-HG-vdg"/>
@@ -328,12 +329,6 @@
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

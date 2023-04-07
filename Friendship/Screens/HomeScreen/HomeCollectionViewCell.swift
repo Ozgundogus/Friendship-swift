@@ -66,8 +66,11 @@ class HomeCollectionViewCell: UICollectionViewCell {
         self.contentView.backgroundColor = .white
             self.contentView.layer.cornerRadius = 10
             self.contentView.layer.masksToBounds = true
-          
-        self.personImage.contentMode = .scaleAspectFill
+     
+        self.personImage.contentMode = .scaleToFill
             self.personImage.clipsToBounds = true
+        self.personImage.clipsToBounds = true
+        self.personImage.widthAnchor.constraint(equalToConstant: 350).isActive = true
+        self.personImage.heightAnchor.constraint(equalToConstant: 215).isActive = true
         }
 }
